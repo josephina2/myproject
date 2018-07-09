@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.853 s <<< FAILURE! - in TestSuite
+feature(runners.TestRunner)  Time elapsed: 0.019 s  <<< FAILURE!
+cucumber.runtime.CucumberException: Error parsing feature file login.feature
+	at runners.TestRunner.features(TestRunner.java:36)
+Caused by: gherkin.lexer.LexingError: 
+Lexing error on line 40: 'Scenario  outline: login with multiple use
+    And i entered the username
+    And i entered the password "<password>"
+    And i click on the login button
+    Then i should be able to log in
+    And i log out
+
+  Examples:
+  |username|password|
+  |josuser|jospassword|
+  |josuser2|jospassword2|
+%_FEATURE_END_%'. See http://wiki.github.com/cucumber/gherkin/lexingerror for more information.
+	at runners.TestRunner.features(TestRunner.java:36)
+
